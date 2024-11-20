@@ -1,0 +1,57 @@
+body {
+    background-color: #f9f9f9; /* Color de fondo suave */
+    font-family: 'Arial', sans-serif; /* Fuente más moderna */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Centrar verticalmente */
+    margin: 0; /* Eliminar márgenes por defecto */
+}
+
+h1 {
+    text-align: center;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio entre el título y el tablero */
+}
+
+.tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin: 40px auto;
+    background-color: #fff; /* Fondo blanco para el tablero */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.casilla {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s; /* Transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-radius: 5px; /* Bordes redondeados en las casillas */
+}
+
+.casilla:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05); /* Efecto de escala */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más intensa */
+}
+
+.x {
+    background-image: url('images/X.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.o {
+    background-image: url('images/O.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
